@@ -1,0 +1,91 @@
+.form-control {
+    display: inline-block;
+    margin: 20px;
+}
+
+.lbl {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+}
+
+.input-field {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 130px;
+}
+
+.input-field:focus {
+    border-color: hsl(259, 100%, 65%);
+    border-width: 2px;
+    outline: 0;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.hr-container {
+    flex-grow: 1;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.btn {
+    background-color: hsl(259, 100%, 65%);
+    font-size: 16px;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.lbl-error {
+    color: hsl(0, 100%, 67%);
+}
+
+.error-input {
+    border-color: hsl(0, 100%, 67%);
+}
+
+.error-text {
+    font-size: 14px;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+@media only screen and (max-width: 600px) {
+    .form-control {
+        display: block;
+        flex-direction: row;
+    }
+
+    .lbl {
+        width: auto;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .input-field {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+}

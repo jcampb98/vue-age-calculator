@@ -50,7 +50,8 @@ hr {
 .btn {
     background-color: hsl(259, 100%, 65%);
     font-size: 16px;
-    border-radius: 100px;
+    border-radius: 110px;
+    border: none;
 }
 
 .btn:hover {
@@ -83,5 +84,36 @@ hr {
 
     .input-field {
         width: 90px;
+    }
+
+    .button-group {
+        position: relative;
+    }
+    
+    .hr-container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+
+    .hr-container hr {
+        background-color: #ccc;
+        height: 1px;
+        margin: 0;
+        border: none;
+      }
+    
+    .btn {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    
+    .btn svg {
+        display: block;
+        margin: auto;
     }
 }

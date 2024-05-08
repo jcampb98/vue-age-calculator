@@ -73,19 +73,15 @@ hr {
 
 @media only screen and (max-width: 600px) {
     .form-control {
-        display: block;
-        flex-direction: row;
+        display: inline-grid;
+        grid-template-columns: auto;
     }
 
     .lbl {
-        width: auto;
-        text-align: left;
-        margin-bottom: 5px;
+        align-items: center;
     }
 
     .input-field {
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 10px;
+        width: 90px;
     }
 }
